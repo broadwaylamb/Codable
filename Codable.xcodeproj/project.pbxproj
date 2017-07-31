@@ -86,6 +86,10 @@
 		87DCCFE31F2FEA10007C06A4 /* Calendar+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AADC1F2FC6AF00F047B1 /* Calendar+Codable.swift */; };
 		87DCCFE41F2FEA10007C06A4 /* TimeZone+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AACA1F2FC4B400F047B1 /* TimeZone+Codable.swift */; };
 		87DCCFE51F2FEA10007C06A4 /* CGFloat+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AACC1F2FC4DC00F047B1 /* CGFloat+Codable.swift */; };
+		87DCCFEF1F2FEFF1007C06A4 /* Codable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DCCF881F2FE6FA007C06A4 /* Codable.framework */; };
+		87DCCFF51F2FF0D4007C06A4 /* CodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* CodableTests.swift */; };
+		87DCCFFF1F2FF2B4007C06A4 /* Codable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DCCFB61F2FE93E007C06A4 /* Codable.framework */; };
+		87DCD0051F2FF2C2007C06A4 /* CodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* CodableTests.swift */; };
 		OBJ_20 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Codable.swift */; };
 		OBJ_27 /* CodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* CodableTests.swift */; };
 		OBJ_29 /* Codable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Codable.framework */; };
@@ -98,6 +102,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_15;
 			remoteInfo = Codable;
+		};
+		87DCCFF01F2FEFF1007C06A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87DCCF871F2FE6FA007C06A4;
+			remoteInfo = Codable_iOS;
+		};
+		87DCD0001F2FF2B4007C06A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87DCCFB51F2FE93E007C06A4;
+			remoteInfo = Codable_tvOS;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -121,9 +139,11 @@
 		8731AAD81F2FC68600F047B1 /* IndexPath+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IndexPath+Codable.swift"; sourceTree = "<group>"; };
 		8731AADA1F2FC69B00F047B1 /* IndexSet+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IndexSet+Codable.swift"; sourceTree = "<group>"; };
 		8731AADC1F2FC6AF00F047B1 /* Calendar+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Calendar+Codable.swift"; sourceTree = "<group>"; };
-		87DCCF881F2FE6FA007C06A4 /* Codable_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Codable_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		87DCCFA91F2FE8FE007C06A4 /* Codable_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Codable_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		87DCCFB61F2FE93E007C06A4 /* Codable_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Codable_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87DCCF881F2FE6FA007C06A4 /* Codable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Codable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87DCCFA91F2FE8FE007C06A4 /* Codable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Codable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87DCCFB61F2FE93E007C06A4 /* Codable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Codable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87DCCFEA1F2FEFF1007C06A4 /* CodableTests_iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodableTests_iOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87DCCFFA1F2FF2B4007C06A4 /* CodableTests_tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodableTests_tvOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_11 /* CodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* Codable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Codable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_14 /* CodableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = CodableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +170,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87DCCFE71F2FEFF1007C06A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87DCCFEF1F2FEFF1007C06A4 /* Codable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87DCCFF71F2FF2B4007C06A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87DCCFFF1F2FF2B4007C06A4 /* Codable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,9 +221,11 @@
 			children = (
 				OBJ_13 /* Codable.framework */,
 				OBJ_14 /* CodableTests.xctest */,
-				87DCCF881F2FE6FA007C06A4 /* Codable_iOS.framework */,
-				87DCCFA91F2FE8FE007C06A4 /* Codable_watchOS.framework */,
-				87DCCFB61F2FE93E007C06A4 /* Codable_tvOS.framework */,
+				87DCCF881F2FE6FA007C06A4 /* Codable.framework */,
+				87DCCFA91F2FE8FE007C06A4 /* Codable.framework */,
+				87DCCFB61F2FE93E007C06A4 /* Codable.framework */,
+				87DCCFEA1F2FEFF1007C06A4 /* CodableTests_iOS.xctest */,
+				87DCCFFA1F2FF2B4007C06A4 /* CodableTests_tvOS.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -279,7 +317,7 @@
 			);
 			name = Codable_iOS;
 			productName = Codable_iOS;
-			productReference = 87DCCF881F2FE6FA007C06A4 /* Codable_iOS.framework */;
+			productReference = 87DCCF881F2FE6FA007C06A4 /* Codable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		87DCCFA81F2FE8FE007C06A4 /* Codable_watchOS */ = {
@@ -297,7 +335,7 @@
 			);
 			name = Codable_watchOS;
 			productName = Codable_watchOS;
-			productReference = 87DCCFA91F2FE8FE007C06A4 /* Codable_watchOS.framework */;
+			productReference = 87DCCFA91F2FE8FE007C06A4 /* Codable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		87DCCFB51F2FE93E007C06A4 /* Codable_tvOS */ = {
@@ -315,8 +353,44 @@
 			);
 			name = Codable_tvOS;
 			productName = Codable_tvOS;
-			productReference = 87DCCFB61F2FE93E007C06A4 /* Codable_tvOS.framework */;
+			productReference = 87DCCFB61F2FE93E007C06A4 /* Codable.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		87DCCFE91F2FEFF1007C06A4 /* CodableTests_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87DCCFF21F2FEFF1007C06A4 /* Build configuration list for PBXNativeTarget "CodableTests_iOS" */;
+			buildPhases = (
+				87DCCFE61F2FEFF1007C06A4 /* Sources */,
+				87DCCFE71F2FEFF1007C06A4 /* Frameworks */,
+				87DCCFE81F2FEFF1007C06A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87DCCFF11F2FEFF1007C06A4 /* PBXTargetDependency */,
+			);
+			name = CodableTests_iOS;
+			productName = CodableTests_iOS;
+			productReference = 87DCCFEA1F2FEFF1007C06A4 /* CodableTests_iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		87DCCFF91F2FF2B4007C06A4 /* CodableTests_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87DCD0021F2FF2B4007C06A4 /* Build configuration list for PBXNativeTarget "CodableTests_tvOS" */;
+			buildPhases = (
+				87DCCFF61F2FF2B4007C06A4 /* Sources */,
+				87DCCFF71F2FF2B4007C06A4 /* Frameworks */,
+				87DCCFF81F2FF2B4007C06A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87DCD0011F2FF2B4007C06A4 /* PBXTargetDependency */,
+			);
+			name = CodableTests_tvOS;
+			productName = CodableTests_tvOS;
+			productReference = 87DCCFFA1F2FF2B4007C06A4 /* CodableTests_tvOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		OBJ_15 /* Codable_macOS */ = {
 			isa = PBXNativeTarget;
@@ -334,9 +408,9 @@
 			productReference = OBJ_13 /* Codable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_22 /* CodableTests */ = {
+		OBJ_22 /* CodableTests_macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_23 /* Build configuration list for PBXNativeTarget "CodableTests" */;
+			buildConfigurationList = OBJ_23 /* Build configuration list for PBXNativeTarget "CodableTests_macOS" */;
 			buildPhases = (
 				OBJ_26 /* Sources */,
 				OBJ_28 /* Frameworks */,
@@ -346,7 +420,7 @@
 			dependencies = (
 				OBJ_30 /* PBXTargetDependency */,
 			);
-			name = CodableTests;
+			name = CodableTests_macOS;
 			productName = CodableTests;
 			productReference = OBJ_14 /* CodableTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -357,6 +431,7 @@
 		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 9999;
 				TargetAttributes = {
 					87DCCF871F2FE6FA007C06A4 = {
@@ -368,6 +443,14 @@
 						ProvisioningStyle = Automatic;
 					};
 					87DCCFB51F2FE93E007C06A4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					87DCCFE91F2FEFF1007C06A4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					87DCCFF91F2FF2B4007C06A4 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
@@ -389,7 +472,9 @@
 				87DCCF871F2FE6FA007C06A4 /* Codable_iOS */,
 				87DCCFA81F2FE8FE007C06A4 /* Codable_watchOS */,
 				87DCCFB51F2FE93E007C06A4 /* Codable_tvOS */,
-				OBJ_22 /* CodableTests */,
+				OBJ_22 /* CodableTests_macOS */,
+				87DCCFE91F2FEFF1007C06A4 /* CodableTests_iOS */,
+				87DCCFF91F2FF2B4007C06A4 /* CodableTests_tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -410,6 +495,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		87DCCFB41F2FE93E007C06A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87DCCFE81F2FEFF1007C06A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87DCCFF81F2FF2B4007C06A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -500,6 +599,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		87DCCFE61F2FEFF1007C06A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87DCCFF51F2FF0D4007C06A4 /* CodableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87DCCFF61F2FF2B4007C06A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87DCD0051F2FF2C2007C06A4 /* CodableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -538,6 +653,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		87DCCFF11F2FEFF1007C06A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87DCCF871F2FE6FA007C06A4 /* Codable_iOS */;
+			targetProxy = 87DCCFF01F2FEFF1007C06A4 /* PBXContainerItemProxy */;
+		};
+		87DCD0011F2FF2B4007C06A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87DCCFB51F2FE93E007C06A4 /* Codable_tvOS */;
+			targetProxy = 87DCD0001F2FF2B4007C06A4 /* PBXContainerItemProxy */;
+		};
 		OBJ_30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_15 /* Codable_macOS */;
@@ -592,10 +717,10 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "jaskiewiczs.Codable-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = "$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -648,10 +773,10 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "jaskiewiczs.Codable-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = "$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -709,7 +834,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "jaskiewiczs.Codable-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = "$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -717,7 +843,7 @@
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -764,7 +890,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "jaskiewiczs.Codable-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = "$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -772,7 +899,7 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -822,13 +949,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "jaskiewiczs.Codable-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = "$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.2;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -876,15 +1004,200 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "jaskiewiczs.Codable-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = "$(PROJECT_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.2;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		87DCCFF31F2FEFF1007C06A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "jaskiewiczs.CodableTests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		87DCCFF41F2FEFF1007C06A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "jaskiewiczs.CodableTests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87DCD0031F2FF2B4007C06A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "jaskiewiczs.CodableTests-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		87DCD0041F2FF2B4007C06A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "jaskiewiczs.CodableTests-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -1024,6 +1337,7 @@
 				87DCCF8F1F2FE6FA007C06A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		87DCCFAE1F2FE8FE007C06A4 /* Build configuration list for PBXNativeTarget "Codable_watchOS" */ = {
 			isa = XCConfigurationList;
@@ -1032,12 +1346,31 @@
 				87DCCFB01F2FE8FE007C06A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		87DCCFBB1F2FE93E007C06A4 /* Build configuration list for PBXNativeTarget "Codable_tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87DCCFBC1F2FE93E007C06A4 /* Debug */,
 				87DCCFBD1F2FE93E007C06A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		87DCCFF21F2FEFF1007C06A4 /* Build configuration list for PBXNativeTarget "CodableTests_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87DCCFF31F2FEFF1007C06A4 /* Debug */,
+				87DCCFF41F2FEFF1007C06A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		87DCD0021F2FF2B4007C06A4 /* Build configuration list for PBXNativeTarget "CodableTests_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87DCD0031F2FF2B4007C06A4 /* Debug */,
+				87DCD0041F2FF2B4007C06A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
@@ -1059,7 +1392,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_23 /* Build configuration list for PBXNativeTarget "CodableTests" */ = {
+		OBJ_23 /* Build configuration list for PBXNativeTarget "CodableTests_macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_24 /* Debug */,

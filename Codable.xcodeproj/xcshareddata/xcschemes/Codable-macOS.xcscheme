@@ -35,7 +35,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "OBJ_22"
                BuildableName = "CodableTests.xctest"
-               BlueprintName = "CodableTests"
+               BlueprintName = "CodableTests_macOS"
                ReferencedContainer = "container:Codable.xcodeproj">
             </BuildableReference>
          </TestableReference>

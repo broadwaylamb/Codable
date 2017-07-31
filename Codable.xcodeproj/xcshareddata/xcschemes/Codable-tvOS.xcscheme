@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "87DCCFB51F2FE93E007C06A4"
-               BuildableName = "Codable_tvOS.framework"
+               BuildableName = "Codable.framework"
                BlueprintName = "Codable_tvOS"
                ReferencedContainer = "container:Codable.xcodeproj">
             </BuildableReference>
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "87DCCFF91F2FF2B4007C06A4"
+               BuildableName = "CodableTests_tvOS.xctest"
+               BlueprintName = "CodableTests_tvOS"
+               ReferencedContainer = "container:Codable.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "87DCCFB51F2FE93E007C06A4"
+            BuildableName = "Codable.framework"
+            BlueprintName = "Codable_tvOS"
+            ReferencedContainer = "container:Codable.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -46,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "87DCCFB51F2FE93E007C06A4"
-            BuildableName = "Codable_tvOS.framework"
+            BuildableName = "Codable.framework"
             BlueprintName = "Codable_tvOS"
             ReferencedContainer = "container:Codable.xcodeproj">
          </BuildableReference>
@@ -64,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "87DCCFB51F2FE93E007C06A4"
-            BuildableName = "Codable_tvOS.framework"
+            BuildableName = "Codable.framework"
             BlueprintName = "Codable_tvOS"
             ReferencedContainer = "container:Codable.xcodeproj">
          </BuildableReference>
