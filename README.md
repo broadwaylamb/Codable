@@ -2,8 +2,6 @@
 
 [![CI Status](http://img.shields.io/travis/broadwaylamb/Codable.svg?style=flat)](https://travis-ci.org/broadwaylamb/Codable)
 [![Version](https://img.shields.io/cocoapods/v/Codable.svg?style=flat)](http://cocoapods.org/pods/Codable)
-[![License](https://img.shields.io/cocoapods/l/Codable.svg?style=flat)](http://cocoapods.org/pods/Codable)
-[![Platform](https://img.shields.io/cocoapods/p/Codable.svg?style=flat)](http://cocoapods.org/pods/Codable)
 
 This library is a backport of the Swift 4 `Codable` stuff. It includes the implementations of the `Codable` protocol for standard types and Foundation types, and `JSONEncoder` and `JSONDecoder` classes as well.
 
