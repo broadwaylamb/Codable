@@ -15,19 +15,13 @@ env:
    - WATCHOS_SDK=watchsimulator3.2
 
    matrix:
-   - DESTINATION="OS=9.0,name=iPhone 6 Plus"                SDK="$IOS_SDK"     SCHEME="$IOS_SCHEME"     RUN_TESTS="YES" POD_LINT="NO"
-   - DESTINATION="OS=9.1,name=iPhone 6s"                    SDK="$IOS_SDK"     SCHEME="$IOS_SCHEME"     RUN_TESTS="YES" POD_LINT="NO"
-   - DESTINATION="OS=9.2,name=iPhone 6s Plus"               SDK="$IOS_SDK"     SCHEME="$IOS_SCHEME"     RUN_TESTS="YES" POD_LINT="NO"
-   - DESTINATION="OS=9.3,name=iPad Pro (12.9-inch)"         SDK="$IOS_SDK"     SCHEME="$IOS_SCHEME"     RUN_TESTS="YES" POD_LINT="NO"
-           
    - DESTINATION="OS=10.0,name=iPhone 6s"                   SDK="$IOS_SDK"     SCHEME="$IOS_SCHEME"     RUN_TESTS="YES" POD_LINT="NO"
    - DESTINATION="OS=10.1,name=iPhone 7"                    SDK="$IOS_SDK"     SCHEME="$IOS_SCHEME"     RUN_TESTS="YES" POD_LINT="NO"
    - DESTINATION="OS=10.2,name=iPad Air 2"                  SDK="$IOS_SDK"     SCHEME="$IOS_SCHEME"     RUN_TESTS="YES" POD_LINT="NO"
-   - DESTINATION="OS=10.3,name=iPhone 7"                    SDK="$IOS_SDK"     SCHEME="$IOS_SCHEME"     RUN_TESTS="YES" POD_LINT="NO"
+   - DESTINATION="OS=10.3.1,name=iPhone 7"                  SDK="$IOS_SDK"     SCHEME="$IOS_SCHEME"     RUN_TESTS="YES" POD_LINT="NO"
     
    - DESTINATION="arch=x86_64"                              SDK="$MACOS_SDK"   SCHEME="$MACOS_SCHEME"   RUN_TESTS="YES" POD_LINT="NO"
    
-   - DESTINATION="OS=9.0,name=Apple TV 1080p"               SDK="$TVOS_SDK"    SCHEME="$TVOS_SCHEME"    RUN_TESTS="YES" POD_LINT="NO"
    - DESTINATION="OS=10.0,name=Apple TV 1080p"              SDK="$TVOS_SDK"    SCHEME="$TVOS_SCHEME"    RUN_TESTS="YES" POD_LINT="NO"
 
    - DESTINATION="OS=2.0,name=Apple Watch - 38mm"           SDK="$WATCHOS_SDK" SCHEME="$WATCHOS_SCHEME" RUN_TESTS="NO"  POD_LINT="NO"
