@@ -33,7 +33,7 @@ This library is a backport of the Swift 4 `Codable` stuff. It includes the imple
     ss.source_files = 'Sources/*.swift'
   end
 
-  s.subspec 'BackportJSONDecoder' do |ss|
-    ss.source_files = 'Sources/BackportJSONDecoder.swift', 'Sources/FoundationCodable.swift'
+  s.subspec 'BackportJSONEncoder' do |ss|
+    ss.source_files = 'Sources/BackportJSONEncoder.swift', 'Sources/FoundationCodable.swift'
   end
 end
