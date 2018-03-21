@@ -12,7 +12,7 @@ matrix:
   include:
 
     - osx_image: xcode8.3
-      env: POD_LINT="YES"
+      env: POD_LINT="YES" RUN_TESTS="NO"
 
     - osx_image: xcode8.3
       env: DESTINATION="OS=9.0,name=iPhone 5" SDK="iphonesimulator10.3" SCHEME="$IOS_SCHEME" RUN_TESTS="YES" POD_LINT="NO"
@@ -30,7 +30,7 @@ matrix:
       env: DESTINATION="OS=3.2,name=Apple Watch Series 2 - 42mm" SDK="watchsimulator3.2" SCHEME="$WATCHOS_SCHEME" RUN_TESTS="YES" POD_LINT="NO"
 
     - osx_image: xcode9.3beta
-      env: POD_LINT="YES"
+      env: POD_LINT="YES" RUN_TESTS="NO"
 
     - osx_image: xcode9.3beta
       env: DESTINATION="OS=9.0,name=iPhone 5" SDK="iphonesimulator11.3" SCHEME="$IOS_SCHEME" RUN_TESTS="YES" POD_LINT="NO"
@@ -54,6 +54,7 @@ script:
 - set -o pipefail
 
 - if [ $POD_LINT == "YES" ]; then
+      gem update cocoapods;
       pod lib lint;
   fi
 

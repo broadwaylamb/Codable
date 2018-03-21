@@ -7,8 +7,8 @@ This library is a backport of the Swift 4 `Codable` stuff. It includes the imple
 
 ## Requirements
 
-- Swift 3.1
-- Xcode 8.3
+- Swift 3.1+
+- Xcode 8.3+
 - iOS 9+
 - macOS 10.11+
 - watchOS 2+
