@@ -26,6 +26,10 @@
 		8731AAD91F2FC68600F047B1 /* IndexPath+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AAD81F2FC68600F047B1 /* IndexPath+Codable.swift */; };
 		8731AADB1F2FC69B00F047B1 /* IndexSet+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AADA1F2FC69B00F047B1 /* IndexSet+Codable.swift */; };
 		8731AADD1F2FC6AF00F047B1 /* Calendar+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AADC1F2FC6AF00F047B1 /* Calendar+Codable.swift */; };
+		87D967F52062A22A00FA2AE7 /* Measurement+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D967F42062A22A00FA2AE7 /* Measurement+Codable.swift */; };
+		87D967F62062A22A00FA2AE7 /* Measurement+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D967F42062A22A00FA2AE7 /* Measurement+Codable.swift */; };
+		87D967F72062A22A00FA2AE7 /* Measurement+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D967F42062A22A00FA2AE7 /* Measurement+Codable.swift */; };
+		87D967F82062A22A00FA2AE7 /* Measurement+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D967F42062A22A00FA2AE7 /* Measurement+Codable.swift */; };
 		87DCCF901F2FE719007C06A4 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Codable.swift */; };
 		87DCCF911F2FE719007C06A4 /* BackportJSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AAB81F2FB9A700F047B1 /* BackportJSONEncoder.swift */; };
 		87DCCF921F2FE719007C06A4 /* FoundationCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AABA1F2FB9F400F047B1 /* FoundationCodable.swift */; };
@@ -139,6 +143,7 @@
 		8731AAD81F2FC68600F047B1 /* IndexPath+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IndexPath+Codable.swift"; sourceTree = "<group>"; };
 		8731AADA1F2FC69B00F047B1 /* IndexSet+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IndexSet+Codable.swift"; sourceTree = "<group>"; };
 		8731AADC1F2FC6AF00F047B1 /* Calendar+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Calendar+Codable.swift"; sourceTree = "<group>"; };
+		87D967F42062A22A00FA2AE7 /* Measurement+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Measurement+Codable.swift"; sourceTree = "<group>"; };
 		87DCCF881F2FE6FA007C06A4 /* Codable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Codable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87DCCFA91F2FE8FE007C06A4 /* Codable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Codable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87DCCFB61F2FE93E007C06A4 /* Codable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Codable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -263,6 +268,7 @@
 				8731AADC1F2FC6AF00F047B1 /* Calendar+Codable.swift */,
 				8731AACA1F2FC4B400F047B1 /* TimeZone+Codable.swift */,
 				8731AACC1F2FC4DC00F047B1 /* CGFloat+Codable.swift */,
+				87D967F42062A22A00FA2AE7 /* Measurement+Codable.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -522,6 +528,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87D967F62062A22A00FA2AE7 /* Measurement+Codable.swift in Sources */,
 				87DCCFA01F2FE719007C06A4 /* IndexSet+Codable.swift in Sources */,
 				87DCCF941F2FE719007C06A4 /* Data+Codable.swift in Sources */,
 				87DCCFA11F2FE719007C06A4 /* Calendar+Codable.swift in Sources */,
@@ -549,6 +556,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87D967F72062A22A00FA2AE7 /* Measurement+Codable.swift in Sources */,
 				87DCCFCE1F2FEA10007C06A4 /* IndexSet+Codable.swift in Sources */,
 				87DCCFC21F2FEA10007C06A4 /* Data+Codable.swift in Sources */,
 				87DCCFCF1F2FEA10007C06A4 /* Calendar+Codable.swift in Sources */,
@@ -576,6 +584,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87D967F82062A22A00FA2AE7 /* Measurement+Codable.swift in Sources */,
 				87DCCFE21F2FEA10007C06A4 /* IndexSet+Codable.swift in Sources */,
 				87DCCFD61F2FEA10007C06A4 /* Data+Codable.swift in Sources */,
 				87DCCFE31F2FEA10007C06A4 /* Calendar+Codable.swift in Sources */,
@@ -619,6 +628,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				87D967F52062A22A00FA2AE7 /* Measurement+Codable.swift in Sources */,
 				8731AABF1F2FBA9500F047B1 /* Data+Codable.swift in Sources */,
 				8731AACD1F2FC4DC00F047B1 /* CGFloat+Codable.swift in Sources */,
 				8731AAD31F2FC55500F047B1 /* URL+Codable.swift in Sources */,
