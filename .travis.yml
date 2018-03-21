@@ -10,10 +10,6 @@ env:
 
 matrix:
   include:
-
-    - osx_image: xcode8.3
-      env: POD_LINT="YES" RUN_TESTS="NO"
-
     - osx_image: xcode8.3
       env: DESTINATION="OS=9.0,name=iPhone 5" SDK="iphonesimulator10.3" SCHEME="$IOS_SCHEME" RUN_TESTS="YES" POD_LINT="NO"
 
