@@ -55,7 +55,7 @@ script:
 
 - if [ $POD_LINT == "YES" ]; then
       gem update cocoapods;
-      pod lib lint --verbose;
+      pod lib lint --verbose --allow-warnings;
   fi
 
 - if [ $RUN_TESTS == "YES" ]; then
