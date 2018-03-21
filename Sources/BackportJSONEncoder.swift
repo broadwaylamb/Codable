@@ -1070,7 +1070,7 @@ open class BackportJSONDecoder {
             let leadingUnderscoreRange = stringKey.characters.startIndex..<firstNonUnderscore
             let trailingUnderscoreRange = stringKey.characters.index(after: lastNonUnderscore)..<stringKey.characters.endIndex
 
-            var components = stringKey.characters[keyRange].split(separator: "_")
+            var components = stringKey.characters[keyRange].split(separator: "_").map(String.init)
             let joinedString: String
             if components.count == 1 {
                 // No underscores in key, leave the word as is - maybe already camel cased
@@ -1289,13 +1289,23 @@ fileprivate struct _JSONKeyedDecodingContainer<K : CodingKey> : KeyedDecodingCon
         case .convertFromSnakeCase:
             // Convert the snake case keys in the container to camel case.
             // If we hit a duplicate key after conversion, then we'll use the first one we saw. Effectively an undefined behavior with JSON dictionaries.
-            self.container = Dictionary(container.map {
-                key, value in (BackportJSONDecoder.KeyDecodingStrategy._convertFromSnakeCase(key), value)
-            }, uniquingKeysWith: { (first, _) in first })
+            var dictionary = [String : Any]()
+            for (key, value) in container {
+                let convertedKey = BackportJSONDecoder.KeyDecodingStrategy._convertFromSnakeCase(key)
+                if dictionary[convertedKey] == nil {
+                    dictionary[convertedKey] = value
+                }
+            }
+            self.container = dictionary
         case .custom(let converter):
-            self.container = Dictionary(container.map {
-                key, value in (converter(decoder.codingPath + [_JSONKey(stringValue: key, intValue: nil)]).stringValue, value)
-            }, uniquingKeysWith: { (first, _) in first })
+            var dictionary = [String : Any]()
+            for (key, value) in container {
+                let convertedKey = converter(decoder.codingPath + [_JSONKey(stringValue: key, intValue: nil)]).stringValue
+                if dictionary[convertedKey] == nil {
+                    dictionary[convertedKey] = value
+                }
+            }
+            self.container = dictionary
         }
         self.codingPath = decoder.codingPath
     }
