@@ -320,13 +320,6 @@ class TestCodable : TestCodableSuper {
         expectRoundTripEqualityThroughJSON(for: components)
     }
 
-    @available(OSX 10.12, iOS 10.0, watchOS 3.0, tvOS 10.0, *)
-    func test_DateInterval_JSON() {
-        for interval in dateIntervalValues {
-            expectRoundTripEqualityThroughJSON(for: interval)
-        }
-    }
-
     // MARK: - Decimal
     lazy var decimalValues: [Decimal] = [
         Decimal.leastFiniteMagnitude,
