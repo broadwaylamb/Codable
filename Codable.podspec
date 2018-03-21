@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Codable'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A backport of Swift 4 Codable.'
 
   s.description      = <<-DESC
@@ -17,7 +17,7 @@ This library is a backport of the Swift 4 `Codable` stuff. It includes the imple
 
   s.homepage         = 'https://github.com/broadwaylamb/Codable'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'broadwaylamb' => 'seergy_pro@me.com' }
+  s.author           = { 'broadwaylamb' => 'jaskiewiczs@icloud.com' }
   s.source           = { :git => 'https://github.com/broadwaylamb/Codable.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/broadway_lamb'
 
