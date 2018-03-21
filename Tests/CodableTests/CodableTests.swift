@@ -324,9 +324,8 @@ class TestCodable : TestCodableSuper {
     @available(OSX 10.12, iOS 10.0, watchOS 3.0, tvOS 10.0, *)
     lazy var dateIntervalValues: [DateInterval] = [
         DateInterval(),
-        DateInterval(start: Date.distantPast, end: Date()),
+        DateInterval(start: Date(timeIntervalSince1970: 0), end: Date(timeIntervalSince1970: 1521647248)),
         DateInterval(start: Date(), end: Date.distantFuture),
-        DateInterval(start: Date.distantPast, end: Date.distantFuture)
     ]
 
     @available(OSX 10.12, iOS 10.0, watchOS 3.0, tvOS 10.0, *)
