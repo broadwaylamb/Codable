@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8731AAB91F2FB9A700F047B1 /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AAB81F2FB9A700F047B1 /* JSONEncoder.swift */; };
+		8731AAB91F2FB9A700F047B1 /* BackportJSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AAB81F2FB9A700F047B1 /* BackportJSONEncoder.swift */; };
 		8731AABB1F2FB9F400F047B1 /* FoundationCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AABA1F2FB9F400F047B1 /* FoundationCodable.swift */; };
 		8731AABD1F2FBA2C00F047B1 /* Date+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AABC1F2FBA2C00F047B1 /* Date+Codable.swift */; };
 		8731AABF1F2FBA9500F047B1 /* Data+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AABE1F2FBA9500F047B1 /* Data+Codable.swift */; };
@@ -27,7 +27,7 @@
 		8731AADB1F2FC69B00F047B1 /* IndexSet+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AADA1F2FC69B00F047B1 /* IndexSet+Codable.swift */; };
 		8731AADD1F2FC6AF00F047B1 /* Calendar+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AADC1F2FC6AF00F047B1 /* Calendar+Codable.swift */; };
 		87DCCF901F2FE719007C06A4 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Codable.swift */; };
-		87DCCF911F2FE719007C06A4 /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AAB81F2FB9A700F047B1 /* JSONEncoder.swift */; };
+		87DCCF911F2FE719007C06A4 /* BackportJSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AAB81F2FB9A700F047B1 /* BackportJSONEncoder.swift */; };
 		87DCCF921F2FE719007C06A4 /* FoundationCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AABA1F2FB9F400F047B1 /* FoundationCodable.swift */; };
 		87DCCF931F2FE719007C06A4 /* Date+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AABC1F2FBA2C00F047B1 /* Date+Codable.swift */; };
 		87DCCF941F2FE719007C06A4 /* Data+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AABE1F2FBA9500F047B1 /* Data+Codable.swift */; };
@@ -47,7 +47,7 @@
 		87DCCFA21F2FE719007C06A4 /* TimeZone+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AACA1F2FC4B400F047B1 /* TimeZone+Codable.swift */; };
 		87DCCFA31F2FE719007C06A4 /* CGFloat+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AACC1F2FC4DC00F047B1 /* CGFloat+Codable.swift */; };
 		87DCCFBE1F2FEA10007C06A4 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Codable.swift */; };
-		87DCCFBF1F2FEA10007C06A4 /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AAB81F2FB9A700F047B1 /* JSONEncoder.swift */; };
+		87DCCFBF1F2FEA10007C06A4 /* BackportJSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AAB81F2FB9A700F047B1 /* BackportJSONEncoder.swift */; };
 		87DCCFC01F2FEA10007C06A4 /* FoundationCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AABA1F2FB9F400F047B1 /* FoundationCodable.swift */; };
 		87DCCFC11F2FEA10007C06A4 /* Date+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AABC1F2FBA2C00F047B1 /* Date+Codable.swift */; };
 		87DCCFC21F2FEA10007C06A4 /* Data+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AABE1F2FBA9500F047B1 /* Data+Codable.swift */; };
@@ -67,7 +67,7 @@
 		87DCCFD01F2FEA10007C06A4 /* TimeZone+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AACA1F2FC4B400F047B1 /* TimeZone+Codable.swift */; };
 		87DCCFD11F2FEA10007C06A4 /* CGFloat+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AACC1F2FC4DC00F047B1 /* CGFloat+Codable.swift */; };
 		87DCCFD21F2FEA10007C06A4 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Codable.swift */; };
-		87DCCFD31F2FEA10007C06A4 /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AAB81F2FB9A700F047B1 /* JSONEncoder.swift */; };
+		87DCCFD31F2FEA10007C06A4 /* BackportJSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AAB81F2FB9A700F047B1 /* BackportJSONEncoder.swift */; };
 		87DCCFD41F2FEA10007C06A4 /* FoundationCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AABA1F2FB9F400F047B1 /* FoundationCodable.swift */; };
 		87DCCFD51F2FEA10007C06A4 /* Date+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AABC1F2FBA2C00F047B1 /* Date+Codable.swift */; };
 		87DCCFD61F2FEA10007C06A4 /* Data+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731AABE1F2FBA9500F047B1 /* Data+Codable.swift */; };
@@ -120,7 +120,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8731AAB81F2FB9A700F047B1 /* JSONEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncoder.swift; sourceTree = "<group>"; };
+		8731AAB81F2FB9A700F047B1 /* BackportJSONEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackportJSONEncoder.swift; sourceTree = "<group>"; };
 		8731AABA1F2FB9F400F047B1 /* FoundationCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationCodable.swift; sourceTree = "<group>"; };
 		8731AABC1F2FBA2C00F047B1 /* Date+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Codable.swift"; sourceTree = "<group>"; };
 		8731AABE1F2FBA9500F047B1 /* Data+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Codable.swift"; sourceTree = "<group>"; };
@@ -244,7 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_8 /* Codable.swift */,
-				8731AAB81F2FB9A700F047B1 /* JSONEncoder.swift */,
+				8731AAB81F2FB9A700F047B1 /* BackportJSONEncoder.swift */,
 				8731AABA1F2FB9F400F047B1 /* FoundationCodable.swift */,
 				8731AABC1F2FBA2C00F047B1 /* Date+Codable.swift */,
 				8731AABE1F2FBA9500F047B1 /* Data+Codable.swift */,
@@ -533,7 +533,7 @@
 				87DCCF931F2FE719007C06A4 /* Date+Codable.swift in Sources */,
 				87DCCFA31F2FE719007C06A4 /* CGFloat+Codable.swift in Sources */,
 				87DCCF961F2FE719007C06A4 /* PersonNameComponents+Codable.swift in Sources */,
-				87DCCF911F2FE719007C06A4 /* JSONEncoder.swift in Sources */,
+				87DCCF911F2FE719007C06A4 /* BackportJSONEncoder.swift in Sources */,
 				87DCCF921F2FE719007C06A4 /* FoundationCodable.swift in Sources */,
 				87DCCFA21F2FE719007C06A4 /* TimeZone+Codable.swift in Sources */,
 				87DCCF9B1F2FE719007C06A4 /* Decimal+Codable.swift in Sources */,
@@ -560,7 +560,7 @@
 				87DCCFC11F2FEA10007C06A4 /* Date+Codable.swift in Sources */,
 				87DCCFD11F2FEA10007C06A4 /* CGFloat+Codable.swift in Sources */,
 				87DCCFC41F2FEA10007C06A4 /* PersonNameComponents+Codable.swift in Sources */,
-				87DCCFBF1F2FEA10007C06A4 /* JSONEncoder.swift in Sources */,
+				87DCCFBF1F2FEA10007C06A4 /* BackportJSONEncoder.swift in Sources */,
 				87DCCFC01F2FEA10007C06A4 /* FoundationCodable.swift in Sources */,
 				87DCCFD01F2FEA10007C06A4 /* TimeZone+Codable.swift in Sources */,
 				87DCCFC91F2FEA10007C06A4 /* Decimal+Codable.swift in Sources */,
@@ -587,7 +587,7 @@
 				87DCCFD51F2FEA10007C06A4 /* Date+Codable.swift in Sources */,
 				87DCCFE51F2FEA10007C06A4 /* CGFloat+Codable.swift in Sources */,
 				87DCCFD81F2FEA10007C06A4 /* PersonNameComponents+Codable.swift in Sources */,
-				87DCCFD31F2FEA10007C06A4 /* JSONEncoder.swift in Sources */,
+				87DCCFD31F2FEA10007C06A4 /* BackportJSONEncoder.swift in Sources */,
 				87DCCFD41F2FEA10007C06A4 /* FoundationCodable.swift in Sources */,
 				87DCCFE41F2FEA10007C06A4 /* TimeZone+Codable.swift in Sources */,
 				87DCCFDD1F2FEA10007C06A4 /* Decimal+Codable.swift in Sources */,
@@ -629,7 +629,7 @@
 				8731AAD11F2FC52900F047B1 /* Decimal+Codable.swift in Sources */,
 				8731AADB1F2FC69B00F047B1 /* IndexSet+Codable.swift in Sources */,
 				8731AAC31F2FC3CE00F047B1 /* PersonNameComponents+Codable.swift in Sources */,
-				8731AAB91F2FB9A700F047B1 /* JSONEncoder.swift in Sources */,
+				8731AAB91F2FB9A700F047B1 /* BackportJSONEncoder.swift in Sources */,
 				8731AACF1F2FC50900F047B1 /* Locale+Codable.swift in Sources */,
 				8731AABB1F2FB9F400F047B1 /* FoundationCodable.swift in Sources */,
 				8731AAD71F2FC66600F047B1 /* DateComponents+Codable.swift in Sources */,

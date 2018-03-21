@@ -8,6 +8,9 @@
 
 import Foundation
 
+#if swift(>=3.2)
+#else
+
 extension CharacterSet : Codable {
     private enum CodingKeys : Int, CodingKey {
         case bitmap
@@ -24,3 +27,5 @@ extension CharacterSet : Codable {
         try container.encode(self.bitmapRepresentation, forKey: .bitmap)
     }
 }
+
+#endif

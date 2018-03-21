@@ -8,6 +8,9 @@
 
 import Foundation
 
+#if swift(>=3.2)
+#else
+
 extension TimeZone : Codable {
     private enum CodingKeys : Int, CodingKey {
         case identifier
@@ -30,3 +33,5 @@ extension TimeZone : Codable {
         try container.encode(self.identifier, forKey: .identifier)
     }
 }
+
+#endif

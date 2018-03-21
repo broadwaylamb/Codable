@@ -8,6 +8,9 @@
 
 import Foundation
 
+#if swift(>=3.2)
+#else
+
 extension DateComponents : Codable {
     private enum CodingKeys : Int, CodingKey {
         case calendar
@@ -88,3 +91,5 @@ extension DateComponents : Codable {
         if self.yearForWeekOfYear != nil { try container.encode(self.yearForWeekOfYear!, forKey: .yearForWeekOfYear) }
     }
 }
+
+#endif

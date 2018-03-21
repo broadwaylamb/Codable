@@ -8,6 +8,9 @@
 
 import Foundation
 
+#if swift(>=3.2)
+#else
+
 extension URL : Codable {
     private enum CodingKeys : Int, CodingKey {
         case base
@@ -55,3 +58,5 @@ extension URL : Codable {
         }
     }
 }
+
+#endif

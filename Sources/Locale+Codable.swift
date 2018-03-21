@@ -8,6 +8,9 @@
 
 import Foundation
 
+#if swift(>=3.2)
+#else
+
 extension Locale : Codable {
     private enum CodingKeys : Int, CodingKey {
         case identifier
@@ -24,3 +27,5 @@ extension Locale : Codable {
         try container.encode(self.identifier, forKey: .identifier)
     }
 }
+
+#endif

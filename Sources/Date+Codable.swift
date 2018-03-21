@@ -8,6 +8,9 @@
 
 import Foundation
 
+#if swift(>=3.2)
+#else
+
 extension Date : Codable {
     public init(from decoder: Decoder) throws {
         // FIXME: This is a hook for bypassing a conditional conformance implementation to apply a strategy (see SR-5206). Remove this once conditional conformance is available.
@@ -47,3 +50,5 @@ extension Date : Codable {
         try container.encode(self.timeIntervalSinceReferenceDate)
     }
 }
+
+#endif

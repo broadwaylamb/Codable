@@ -9,6 +9,9 @@
 import Foundation
 import CoreGraphics
 
+#if swift(>=3.2)
+#else
+
 extension CGFloat : Codable {
     @_transparent
     public init(from decoder: Decoder) throws {
@@ -40,3 +43,5 @@ extension CGFloat : Codable {
         try container.encode(self.native)
     }
 }
+
+#endif

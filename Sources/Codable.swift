@@ -14,6 +14,9 @@
 // Codable
 //===----------------------------------------------------------------------===//
 
+#if swift(>=3.2)
+#else
+
 /// A type that can encode itself to an external representation.
 public protocol Encodable {
     /// Encodes this value into the given encoder.
@@ -4567,3 +4570,5 @@ public extension UnkeyedDecodingContainer {
         return try self.decode(T.self)
     }
 }
+
+#endif

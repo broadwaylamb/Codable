@@ -8,6 +8,9 @@
 
 import Foundation
 
+#if swift(>=3.2)
+#else
+
 extension UUID : Codable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
@@ -26,3 +29,5 @@ extension UUID : Codable {
         try container.encode(self.uuidString)
     }
 }
+
+#endif

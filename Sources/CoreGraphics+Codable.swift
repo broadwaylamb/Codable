@@ -8,6 +8,9 @@
 
 import CoreGraphics
 
+#if swift(>=3.2)
+#else
+
 extension CGPoint : Codable {
     public init(from decoder: Decoder) throws {
         var container = try decoder.unkeyedContainer()
@@ -90,3 +93,5 @@ extension CGAffineTransform : Codable {
         try container.encode(ty)
     }
 }
+
+#endif

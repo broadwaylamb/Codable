@@ -8,6 +8,9 @@
 
 import Foundation
 
+#if swift(>=3.2)
+#else
+
 extension Decimal : Codable {
     private enum CodingKeys : Int, CodingKey {
         case exponent
@@ -82,3 +85,5 @@ extension Decimal : Codable {
         try mantissaContainer.encode(_mantissa.7)
     }
 }
+
+#endif

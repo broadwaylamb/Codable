@@ -17,12 +17,15 @@ import Codable
 import XCTest
 class TestCodableSuper : XCTestCase { }
 
+#if swift(>=3.2)
+#else
 extension NSRange : Equatable {
 
     public static func == (lhs: NSRange, rhs: NSRange) -> Bool {
         return NSEqualRanges(lhs, rhs)
     }
 }
+#endif
 
 // MARK: - Helper Functions
 @available(OSX 10.11, iOS 9.0, *)
@@ -65,7 +68,7 @@ func expectRoundTripEquality<T : Codable>(of value: T, encode: (T) throws -> Dat
 func expectRoundTripEqualityThroughJSON<T : Codable>(for value: T) where T : Equatable {
     let inf = "INF", negInf = "-INF", nan = "NaN"
     let encode = { (_ value: T) throws -> Data in
-        let encoder = JSONEncoder()
+        let encoder = BackportJSONEncoder()
         encoder.nonConformingFloatEncodingStrategy = .convertToString(positiveInfinity: inf,
                                                                       negativeInfinity: negInf,
                                                                       nan: nan)
@@ -73,7 +76,7 @@ func expectRoundTripEqualityThroughJSON<T : Codable>(for value: T) where T : Equ
     }
 
     let decode = { (_ data: Data) throws -> T in
-        let decoder = JSONDecoder()
+        let decoder = BackportJSONDecoder()
         decoder.nonConformingFloatDecodingStrategy = .convertFromString(positiveInfinity: inf,
                                                                         negativeInfinity: negInf,
                                                                         nan: nan)
@@ -324,6 +327,7 @@ class TestCodable : TestCodableSuper {
         Decimal.leastNormalMagnitude,
         Decimal.leastNonzeroMagnitude,
         Decimal(),
+        Decimal(string: "67.52")!,
 
         // Decimal.pi does not round-trip at the moment.
         // See rdar://problem/33165355

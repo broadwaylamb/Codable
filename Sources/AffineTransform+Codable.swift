@@ -8,6 +8,9 @@
 
 import Foundation
 
+#if swift(>=3.2)
+#else
+
 #if os(macOS)
 extension AffineTransform : Codable {
     public init(from decoder: Decoder) throws {
@@ -30,4 +33,6 @@ extension AffineTransform : Codable {
         try container.encode(self.tY)
     }
 }
+#endif
+
 #endif

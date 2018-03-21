@@ -8,6 +8,9 @@
 
 import Foundation
 
+#if swift(>=3.2)
+#else
+
 extension NSRange : Codable {
     public init(from decoder: Decoder) throws {
         var container = try decoder.unkeyedContainer()
@@ -22,3 +25,5 @@ extension NSRange : Codable {
         try container.encode(self.length)
     }
 }
+
+#endif

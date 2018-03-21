@@ -8,6 +8,9 @@
 
 import Foundation
 
+#if swift(>=3.2)
+#else
+
 extension IndexPath : Codable {
     private enum CodingKeys : Int, CodingKey {
         case indexes
@@ -39,3 +42,5 @@ extension IndexPath : Codable {
         }
     }
 }
+
+#endif

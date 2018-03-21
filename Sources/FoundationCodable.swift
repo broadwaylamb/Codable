@@ -16,9 +16,14 @@ import Foundation
 // Errors
 //===----------------------------------------------------------------------===//
 
+#if swift(>=3.2)
+#else
+
 // Both of these error types bridge to NSError, and through the entry points they use, no further work is needed to make them localized.
 extension EncodingError : LocalizedError {}
 extension DecodingError : LocalizedError {}
+    
+#endif
 
 //===----------------------------------------------------------------------===//
 // Error Utilities
