@@ -8,6 +8,9 @@
 
 import Foundation
 
+#if swift(>=3.2)
+#else
+
 extension Calendar : Codable {
 
     internal static func _toNSCalendarIdentifier(_ identifier : Identifier) -> NSCalendar.Identifier {
@@ -121,3 +124,5 @@ extension Calendar : Codable {
         try container.encode(self.minimumDaysInFirstWeek, forKey: .minimumDaysInFirstWeek)
     }
 }
+
+#endif

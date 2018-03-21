@@ -26,6 +26,7 @@ This library is a backport of the Swift 4 `Codable` stuff. It includes the imple
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
 
+  s.swift_version = '4.0'
   s.default_subspecs = 'Everything'
 
   s.subspec 'Everything' do |ss|
